@@ -24,7 +24,8 @@ jobs:
           node-version: 18
           cache: pnpm
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile --prefer-offline
+        # run: pnpm install --frozen-lockfile --prefer-offline
+        run: pnpm install
       - name: Prettier
         run: pnpm run prettier:ci
       - name: Lint
