@@ -11,6 +11,7 @@ describe('测试 `staleTime` 功能', () => {
   afterEach(() => {
     queryClient.clear()
   })
+  
 
   it('只有当超出 `staleTime` 时间才发起额外的请求', async () => {
     const key = ['todos']
