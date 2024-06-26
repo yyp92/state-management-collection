@@ -45,7 +45,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/q-u-n/state-management-collection/tree/main/website/',
+            'https://github.com/yyp92/state-management-collection/tree/main/website',
         },
         theme: {
           customCss: './custom.css',
@@ -67,11 +67,23 @@ const config = {
             label: 'Jotai',
             position: 'right',
           },
-          { to: '/zustand', label: 'Zustand', position: 'right' },
-          { to: '/valtio', label: 'Valtio', position: 'right' },
-          { to: '/react-query', label: 'React-Query', position: 'right' },
           {
-            href: 'https://github.com/q-u-n/state-management-collection.git',
+            to: '/zustand',
+            label: 'Zustand',
+            position: 'right'
+          },
+          {
+            to: '/valtio',
+            label: 'Valtio',
+            position: 'right'
+          },
+          {
+            to: '/react-query',
+            label: 'React-Query',
+            position: 'right'
+          },
+          {
+            href: 'https://github.com/yyp92/state-management-collection.git',
             label: 'GitHub',
             position: 'right',
           },
