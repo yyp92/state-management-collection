@@ -84,3 +84,53 @@ pnpm run release
 },
 ```
 
+
+
+
+
+## Docusaurus 快速入门
+首先，我们在根目录下执行：
+
+```bash
+npx create-docusaurus@latest website classic
+
+# 启动
+cd website  
+npm run start
+```
+
+执行 npx 运行一个命令时，如果没有安装则 npx 会临时帮助我们安装这个包，执行完毕以后会将其删除。
+
+其中，create-docusaurus 是一个命令行工具，用于快速创建 Docusaurus 项目，classic 是一个预设模板，包含了标准文档、博客、自定义页面及 CSS 框架（支持暗黑模式），可以更快地生成一个网站。
+
+
+### 目录结构
+```js
+website
+├── blog // 包含博客的 Markdown 文件
+│   ├── 2021-08-26-welcome
+│   │   ├── docusaurus-plushie-banner.jpeg
+│   │   └── index.md
+│   ├── 2019-05-28-first-blog-post.md
+│   ├── 2019-05-29-long-blog-post.md
+│   ├── 2021-08-01-mdx-blog-post.mdx
+│   └── authors.yml
+├── docs // 包含文档的 Markdown 文件
+│   ├── doc1.md
+│   ├── doc2.md
+│   ├── doc3.md
+│   └── mdx.md
+├── src // 页面或自定义 React 组件一类的非文档文件，其中 /src/pages 目录中的 JSX/TSX/MDX 文件都会被转换成网站页面，比如网站首页对应了src/pages/index.js文件。
+│   ├── css
+│   │   └── custom.css
+│   └── pages
+│       ├── styles.module.css
+│       └── index.js
+├── static // 静态目录。 此处的所有内容都会被复制进 build 文件夹。
+│   └── img
+├── docusaurus.config.js // 站点配置文件。
+├── package.json
+├── README.md
+├── sidebars.js // 用于配置侧边栏，分为自动生成和手动配置。
+└── yarn.lock
+```
