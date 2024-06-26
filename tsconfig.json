@@ -1,11 +1,24 @@
 {
-  "compilerOptions": {
-    "module": "esnext",
-    "esModuleInterop": true,
-    "strict": true,
-    "target": "esnext",
-    "moduleResolution": "bundler",
-    "noEmit": true,
-    "jsx": "react-jsx",
-  },
+    "compilerOptions": {
+        // 使用最新的 JavaScript 标准模块语法
+        "module": "esnext",
+
+        // 实现对非 ECMAScript 模块（例如，CommonJS 模块）的默认导入
+        "esModuleInterop": true,
+
+        // 启用所有严格类型检查选项，有助于发现潜在的类型错误，提高代码质量
+        "strict": true,
+
+        // 编译后的 JavaScript 代码的 ECMAScript 目标版本
+        "target": "esnext",
+
+        // 指定了模块解析策略，这里目的是希望交由 rollup 来配置
+        "moduleResolution": "bundler",
+
+        // 执行类型检查，但不会输出任何编译后的代码，因为编译交由 rollup 来做了
+        "noEmit": true,
+
+        // 指定了如何处理 JSX 语法
+        "jsx": "react-jsx",
+    },
 }

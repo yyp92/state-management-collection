@@ -1,3 +1,5 @@
+# 用于执行类型、Eslint 和 Prettier 检验。
+
 name: lint and type
 
 on:

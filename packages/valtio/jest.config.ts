@@ -1,4 +1,4 @@
 export default {
-  displayName: 'valtio',
-  preset: '../../jest.preset.js',
+    displayName: 'valtio',
+    preset: '../../jest.preset.js',
 }

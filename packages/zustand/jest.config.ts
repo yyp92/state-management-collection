@@ -1,4 +1,4 @@
 export default {
-  displayName: 'zustand',
-  preset: '../../jest.preset.js',
+    displayName: 'zustand',
+    preset: '../../jest.preset.js',
 }

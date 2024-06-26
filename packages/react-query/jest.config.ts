@@ -1,4 +1,4 @@
 export default {
-  displayName: 'react-query',
-  preset: '../../jest.preset.js',
+    displayName: 'react-query',
+    preset: '../../jest.preset.js',
 }
