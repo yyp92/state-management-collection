@@ -18,7 +18,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             # 用来将代码库的最新版本下载到 workflow 的运行的环境中
-            - name: Checkout
+            - name: Checkout code
                 uses: actions/checkout@v4
             # 设置 pnpm
             - name: Setup pnpm
