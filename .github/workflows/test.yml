@@ -33,7 +33,8 @@ jobs:
           cache: pnpm
       # 安装依赖
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile --prefer-offline
+        # run: pnpm install --frozen-lockfile --prefer-offline
+        run: pnpm install
       # 跑单元测试脚本
       - name: Run Tests
         run: pnpm run test
