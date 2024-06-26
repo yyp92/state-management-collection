@@ -19,7 +19,7 @@ jobs:
     steps:
       # 用来将代码库的最新版本下载到 workflow 的运行的环境中
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.0
       # 设置 pnpm
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
